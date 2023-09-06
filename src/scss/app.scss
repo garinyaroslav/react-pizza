@@ -24,6 +24,21 @@ body {
 .content {
   padding: 40px 0;
 
+  &__error-info {
+    margin: 60px auto;
+    width: 580px;
+    text-align: center;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
   &__title {
     font-weight: 800;
     font-size: 38px;
@@ -34,7 +49,7 @@ body {
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 11px;
 
     @media (max-width: 1400px) {
@@ -333,23 +348,24 @@ body {
   }
 
   &--empty {
-    margin: 0 auto;
-    width: 560px;
+    margin: 80px auto;
+    width: 620px;
     text-align: center;
 
     h2 {
-      font-size: 32px;
-      margin-bottom: 10px;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 15px;
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 145.4%;
       letter-spacing: 0.01em;
       color: #777777;
     }
 
-    icon {
+    span {
       position: relative;
       top: 2px;
     }
