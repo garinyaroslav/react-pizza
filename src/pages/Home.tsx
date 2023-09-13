@@ -6,16 +6,12 @@ import { useAppDispatch } from '../redux/store';
 
 import { setCategoryId, setCurrentPage, setFilters } from '../redux/filter/slice';
 import { selectFilter } from '../redux/filter/selectors';
-
-// import { Categories, Sort, PizzaBlock, Skeleton, Pagination } from '../components';
-import Categories from '../components/Categories';
-import SortPopup, { sortList } from '../components/SortPopup';
-import PizzaBlock from '../components/PizzaBlock';
-import Skeleton from '../components/PizzaBlock/Skeleton';
-import Pagination from '../components/Pagination';
 import { selectPizzaData } from '../redux/pizza/selectors';
 import { fetchPizzas } from '../redux/pizza/asyncActions';
 import { Pizza, SearchPizzaParams } from '../redux/pizza/types';
+
+import { Categories, SortPopup, PizzaBlock, Skeleton, Pagination } from '../components';
+import { sortList } from '../components/SortPopup';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();

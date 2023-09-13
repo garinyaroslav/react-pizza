@@ -8,7 +8,7 @@ type PaginationProps = {
   onChangePage: (page: number) => void;
 };
 
-const Pagination: React.FC<PaginationProps> = ({ onChangePage, currentPage }) => (
+export const Pagination: React.FC<PaginationProps> = ({ onChangePage, currentPage }) => (
   <ReactPaginate
     className={styles.root}
     breakLabel="..."
@@ -20,5 +20,3 @@ const Pagination: React.FC<PaginationProps> = ({ onChangePage, currentPage }) =>
     previousLabel="<"
   />
 );
-
-export default Pagination;
