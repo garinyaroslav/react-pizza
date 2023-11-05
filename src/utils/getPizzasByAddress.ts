@@ -8,7 +8,7 @@ export const getPizzaByAddress = ({
   search,
   currentPage,
 }: SearchPizzaParams) => {
-  return `https://64d8ebbe5f9bf5b879ceb297.mockapi.io/items?${category}${search}&sortBy=${sortBy}&order=${order}&limit=4&page=${currentPage}`;
+  return `${process.env.MockapiUrl}/items?${category}${search}&sortBy=${sortBy}&order=${order}&limit=4&page=${currentPage}`;
 };
 
 export const getPizzaAddress = (): string => {
