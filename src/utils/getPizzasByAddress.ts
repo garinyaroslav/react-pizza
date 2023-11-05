@@ -12,5 +12,5 @@ export const getPizzaByAddress = ({
 };
 
 export const getPizzaAddress = (): string => {
-  return 'https://64d8ebbe5f9bf5b879ceb297.mockapi.io';
+  return `${process.env.MockapiUrl}`;
 };
